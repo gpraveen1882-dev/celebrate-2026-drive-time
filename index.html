@@ -175,7 +175,7 @@ function guestCard(g) {
     </div>
     <div class="card-footer">
       ${epFl}${sbFl}${liFl}
-      <span class="footer-host">Interviewed by <strong>${g.host}</strong></span>
+      <span class="footer-host">Interviewed by <strong>${hostObj && hostObj.linkedin ? `<a href="${hostObj.linkedin}" target="_blank" style="color:inherit;text-decoration:underline">${g.host}</a>` : g.host}</strong></span>
     </div>
   </article>`;
 }
